@@ -1,0 +1,13 @@
+# Appels API + secrets
+requests>=2.31
+python-dotenv>=1.0
+
+# Nettoyage / calculs
+pandas>=2.1
+
+# Visualisations
+matplotlib>=3.8
+seaborn>=0.13
+
+# Notebook d'analyse
+jupyter>=1.0
