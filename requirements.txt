@@ -11,3 +11,7 @@ seaborn>=0.13
 
 # Notebook d'analyse
 jupyter>=1.0
+
+# Génération du dossier PDF (rapport/build_pdf.py)
+markdown>=3.5
+xhtml2pdf>=0.2.11

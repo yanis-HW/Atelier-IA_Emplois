@@ -52,6 +52,20 @@ python src/01_collecte.py     # -> data/raw/      (offres IDF)
 python src/02_nettoyage.py    # -> data/processed/offres_clean.csv
 python src/03_calculs.py      # -> agrégats KPI
 jupyter notebook notebooks/04_analyse.ipynb
+python rapport/build_pdf.py   # -> rapport/rapport.pdf (dossier final)
 ```
 
 Chaque script est ré-exécutable de bout en bout sans intervention manuelle.
+
+## Livrables
+
+| Livrable | Fichier |
+|---|---|
+| I — Plan de récolte | `src/01_collecte.py` + `rapport/rapport.md` §1 |
+| II — Nettoyage | `src/02_nettoyage.py` + `rapport/rapport.md` §2 |
+| III — Calcul | `src/03_calculs.py` |
+| IV — Analyse | `notebooks/04_analyse.ipynb` |
+| V — Conclusion | `rapport/rapport.md` §5 |
+
+Le dossier rédigé se trouve dans `rapport/rapport.md` (source) et
+`rapport/rapport.pdf` (version générée).
