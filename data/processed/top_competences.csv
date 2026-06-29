@@ -1,0 +1,54 @@
+competence,nb_offres,part_offres
+SQL,121,0.405
+Python,111,0.371
+Power BI,66,0.221
+Azure,43,0.144
+Excel,42,0.14
+Spark,40,0.134
+Data Visualization,38,0.127
+GCP,37,0.124
+Databricks,35,0.117
+AWS,35,0.117
+ETL,32,0.107
+Machine Learning,29,0.097
+R,28,0.094
+Tableau,27,0.09
+Git,24,0.08
+Snowflake,20,0.067
+Scala,19,0.064
+Kafka,17,0.057
+Java,17,0.057
+dbt,14,0.047
+Airflow,13,0.043
+Hadoop,13,0.043
+Kubernetes,13,0.043
+Power Query,13,0.043
+BigQuery,13,0.043
+Talend,13,0.043
+Deep Learning,12,0.04
+Docker,12,0.04
+NLP,12,0.04
+SQL Server,11,0.037
+SAS,11,0.037
+Oracle,11,0.037
+PostgreSQL,10,0.033
+PyTorch,9,0.03
+Looker,9,0.03
+Pandas,8,0.027
+NoSQL,8,0.027
+Hive,8,0.027
+DAX,7,0.023
+Elasticsearch,6,0.02
+TensorFlow,6,0.02
+Qlik,6,0.02
+SSIS/SSAS/SSRS,4,0.013
+MongoDB,4,0.013
+NumPy,4,0.013
+scikit-learn,4,0.013
+Linux,4,0.013
+JavaScript,3,0.01
+MySQL,2,0.007
+C#,2,0.007
+C++,2,0.007
+Redshift,1,0.003
+Matlab,1,0.003
