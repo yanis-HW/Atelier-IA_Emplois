@@ -1,0 +1,9 @@
+# Forcer le traitement binaire pour éviter toute conversion de fins de ligne.
+*.pdf binary
+*.png binary
+
+# Normaliser les fins de ligne des fichiers texte du projet.
+*.py text eol=lf
+*.md text
+*.csv text
+*.ipynb text eol=lf
