@@ -17,6 +17,26 @@ l'API REST a été retenue car elle domine sur :
 
 Principe appliqué : **API si disponible > parsing HTML > navigateur headless**.
 
+## Pour l'évaluateur — exécuter le projet
+
+Le code est entièrement ré-exécutable. Comme les identifiants API ne sont **pas**
+versionnés (bonne pratique de sécurité), il faut fournir les vôtres :
+
+1. **Créer une application** sur [francetravail.io](https://francetravail.io)
+   (espace développeur) et **souscrire à l'API « Offres d'emploi v2 »** pour
+   obtenir un `client_id` et un `client_secret`.
+2. **Configurer les secrets** : `cp .env.example .env` puis renseigner les 4 clés.
+   Les valeurs `FT_TOKEN_URL` et `FT_SCOPE` sont déjà documentées dans
+   `.env.example` (endpoint OAuth2 et scopes `api_offresdemploiv2 o2dsoffre`).
+3. **Installer et lancer** (voir [Installation](#installation) et
+   [Pipeline](#pipeline-à-exécuter-dans-lordre) ci-dessous).
+
+> Sans relancer la collecte (étape 01), les données nettoyées et les agrégats sont
+> **déjà versionnés** dans `data/processed/` : le notebook d'analyse
+> (`notebooks/04_analyse.ipynb`) et le dossier sont donc consultables et
+> ré-exécutables **sans clé API**. La clé n'est nécessaire que pour recollecter
+> des offres fraîches via `src/01_collecte.py`.
+
 ## Structure du dépôt
 
 ```
