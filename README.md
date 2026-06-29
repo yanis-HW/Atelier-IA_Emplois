@@ -61,11 +61,24 @@ Chaque script est ré-exécutable de bout en bout sans intervention manuelle.
 
 | Livrable | Fichier |
 |---|---|
-| I — Plan de récolte | `src/01_collecte.py` + `rapport/rapport.md` §1 |
-| II — Nettoyage | `src/02_nettoyage.py` + `rapport/rapport.md` §2 |
-| III — Calcul | `src/03_calculs.py` |
-| IV — Analyse | `notebooks/04_analyse.ipynb` |
-| V — Conclusion | `rapport/rapport.md` §5 |
+| I — Plan de récolte | `src/01_collecte.py` + `rapport/rapport.tex` §2 |
+| II — Nettoyage | `src/02_nettoyage.py` + `rapport/rapport.tex` §3 |
+| III — Calcul | `src/03_calculs.py` + `rapport/rapport.tex` §4 |
+| IV — Analyse | `notebooks/04_analyse.ipynb` + `rapport/rapport.tex` §5 |
+| V — Conclusion | `rapport/rapport.tex` §6 |
 
-Le dossier rédigé se trouve dans `rapport/rapport.md` (source) et
-`rapport/rapport.pdf` (version générée).
+### Dossier final
+
+Le dossier rédigé est `rapport/rapport.tex` (LaTeX, version formelle attendue).
+Pour le compiler en PDF :
+
+```bash
+python rapport/build_figures.py          # (re)génère les figures dans rapport/figures/
+cd rapport && pdflatex rapport.tex && pdflatex rapport.tex   # 2 passes (table des matières)
+```
+
+À défaut de LaTeX installé localement, déposer `rapport.tex` et le dossier
+`figures/` sur [Overleaf](https://www.overleaf.com) (compilation pdfLaTeX).
+
+Une version Markdown allégée du dossier est aussi disponible
+(`rapport/rapport.md`, convertible via `python rapport/build_pdf.py`).
